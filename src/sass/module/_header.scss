@@ -1,0 +1,140 @@
+@use "global" as *;
+/* 
+// ==========
+// header
+// ==========
+*/
+.header {
+  position: relative;
+  height: rem(170);
+  background: $white;
+  @include mq() {
+    height: rem(140);
+  }
+}
+
+.header__inner {
+  max-width: 1920px;
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__flexWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  height: rem(80);
+  // width: rem(220);
+  width: auto;
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.header__drawer {
+  position: relative;
+  width: rem(58);
+  height: rem(30);
+  span {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background-color: $base-color;
+    transition: all .3s;
+    &:first-child {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:last-child {
+      bottom: 0;
+    }
+  }
+}
+
+.header__drawer.open {
+  span {
+    &:first-child {
+      transform: rotate(45deg);
+      top: 50%;
+    }
+    &:nth-child(2) {
+      display: none;
+    }
+    &:last-child {
+      transform: rotate(-45deg);
+      top: 50%;
+    }
+  }
+}
+
+.header__nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255,255,255,.9);
+  font-size: rem(40);
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .3s;
+  @include mq() {
+    position: initial;
+    display: flex;
+  }
+}
+
+.header__nav.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.header__nav a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 rem(20);
+  &::before {
+    content: '';
+    display: inline-block;
+    width: rem(24);
+    height: rem(24);
+    background-color: $red;
+    border-radius: 50%;
+    margin-right: rem(30);
+  }
+}
+
+.nav__list {
+  height: 100%;
+  @include mq() {
+    display: flex;
+    align-items: center;
+  }
+}
+.header__linkArea {
+  display: none;
+  @include mq() {
+    display: block;
+  }
+}
+
+.headerLink__list {
+  display: flex;
+}
+
+.headerLink__imgArea {
+  display: inline-block;
+  max-width: rem(42);
+}
+

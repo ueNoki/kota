@@ -4,7 +4,7 @@
 // インナー幅設定
 ////////////////////
 // コンテンツのインナー幅（最も共通の幅が多い部分）
-$inner: 1100px;
+$inner: 1200px;
 // ※キャンパス幅ではなくインナーの幅を指す
 
 // 余白
@@ -12,33 +12,36 @@ $padding-pc: 25px;
 $padding-sp: 20px;
 // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
-
 ////////////////////
 // フォント設定
 ////////////////////
 
-$base-font-family: "";
+$base-font-family: "Lato", "Noto Sans JP", "ヒラギノ角ゴ ProN",
+  "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック",
+  "MS PGothic", sans-serif;
 $second-font-family: "";
+$ff-cubano: cubano, sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
+$base-color: #211815;
 
 body {
   font-family: $base-font-family;
+  color: $base-color;
 }
 
 // フォントウェイト
 $regular: 300;
 $normal: 400;
 $bold: 700;
-
 ////////////////////
 // 色の指定
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #111;
+$black: #000;
 $white: #fff;
-
-
+$red: #b12e29;
+$gray: #e9e9e9;
 ////////////////////
 // メディアクエリとブレークポイントの設定
 ////////////////////
@@ -50,7 +53,6 @@ $breakpoints: (
   lg: 1024,
   xl: 1440,
 );
-
 
 //メディアクエリー
 $mediaquerys: (
@@ -71,7 +73,6 @@ $mediaquerys: (
 @function rem($pixels) {
   @return math.div($pixels, 16) * 1rem;
 }
-
 
 ////////////////////
 // 非表示設定

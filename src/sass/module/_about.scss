@@ -1,0 +1,158 @@
+@use "global" as *;
+/*
+// ==========
+// about
+// ==========
+*/
+
+.about__body {
+  width: 100%;
+  padding-top: rem(40);
+}
+
+.about__text--md {
+  font-size: rem(23);
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  @include mq() {
+    font-size: rem(25);
+  }
+}
+
+.about__text--ll {
+  font-size: rem(76);
+  font-family: $ff-cubano;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  .small {
+    font-size: rem(60);
+  }
+}
+
+.about__text--s {
+  font-size: rem(18);
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  @include mq() {
+    font-size: rem(20);
+  }
+}
+
+/* table */
+
+.about__table {
+  margin-top: rem(100);
+  .table__inner {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .table__head,
+  .table__text {
+    font-size: rem(23);
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    line-height: 1.8;
+    @include mq() {
+      font-size: rem(25);
+      line-height: 1.5;
+    }
+  }
+  .table__head {
+    padding-right: 2rem;
+  }
+  .table__text {
+    position: relative;
+    text-align: left;
+    padding: 1rem 1rem 1rem 2rem;
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      content: '';
+      display: block;
+      width: 1px;
+      height: 4rem;
+      background-color: #000;
+    }
+  }
+  .small {
+    font-size: rem(14);
+    font-weight: bold;
+    letter-spacing: .12em;
+    line-height: 1.8;
+    @include mq() {
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+  }
+}
+
+/* imgArea */
+.about__imgArea {
+  position: relative;
+  margin-top: rem(90);
+  padding-top: rem(64);
+  padding-bottom: rem(60);
+  background-color: $white;
+  border: 2px solid $gray;
+  border-radius: rem(28);
+}
+
+.imgArea__title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imgArea__inner {
+  padding-left: rem(74);
+  padding-right: rem(74);
+  display: flex;
+}
+
+.imgArea__img {
+  max-width: rem(400);
+  margin-right: 4rem;
+  border-radius: rem(20);
+  overflow: hidden;
+  @include mq() {
+    max-width: rem(424);
+    width: 100%;
+  }
+}
+
+.imgArea__body {
+  .text {
+    font-size: rem(20);
+    font-weight: bold;
+    letter-spacing: .12em;
+    line-height: 1.75;
+  }
+}
+
+.imgArea__list {
+  margin-bottom: 1.5rem;
+}
+
+.imgArea__item {
+  text-align: left;
+  .title {
+    display: inline-block;
+    font-size: rem(30);
+    font-weight: bold;
+    letter-spacing: .12em;
+    line-height: 1.75;
+    border-bottom: 2px solid $base-color;
+  }
+  .text {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .12em;
+    line-height: 1.75;
+  }
+  & + & {
+    margin-top: 2rem;
+  }
+}

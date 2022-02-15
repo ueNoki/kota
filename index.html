@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <!-- meta情報 -->
-  <title>CodeUps</title>
+  <title>kota</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- ogp -->
@@ -16,16 +17,266 @@
   <meta property="og:site_name" content="" />
   <meta property="og:description" content="" />
   <!-- ファビコン -->
-  <link rel="”icon”" href="" />
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="img/android-chrome-192x192.png">
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
+  <!-- web-font -->
+  <link rel="stylesheet" href="https://use.typekit.net/bav2xop.css">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./js/script.js"></script>
 </head>
+
 <body>
-  <div class="inner">
-  <p class="test">変更のテスト</p>
-</div>
+  <header class="header">
+    <div class="header__inner header__flexWrapper">
+      <h1 class="header__logo">
+        <img src="/img/logo_01.svg" alt="弁当のコタ">
+      </h1><!-- /.header__logo -->
+      <div class="header__drawer js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="header__nav js-drawer-menu">
+        <nav>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#">トップ</a>
+            </li><!-- /.nav__item -->
+            <li class="nav__item">
+              <a href="#">コタのお弁当</a>
+            </li><!-- /.nav__item -->
+            <li class="nav__item">
+              <a href="#">ご利用案内</a>
+            </li><!-- /.nav__item -->
+          </ul><!-- /.nav__list -->
+        </nav>
+        <div class="header__linkArea headerLink">
+          <ul class="headerLink__list">
+            <li class="headerLink__item">
+              <span>ご注文はこちら</span>
+              <p class="headerLink__tel">TEL. 0896-77-5361</p><!-- /.headerLink__tel -->
+            </li><!-- /.headerLink__item -->
+            <li class="headerLink__item">
+              <figure class="headerLink__imgArea">
+                <img src="/img/img_instagram.svg" alt="インスタグラム">
+              </figure><!-- /.headerLink__imgArea -->
+              <figure class="headerLink__imgArea">
+                <img src="/img/img_line.svg" alt="ライン">
+              </figure><!-- /.headerLink__imgArea -->
+            </li><!-- /.headerLink__item -->
+          </ul><!-- /.headerLink__list -->
+        </div><!-- /.header__linkArea -->
+      </div><!-- /.header__nav -->
+    </div><!-- /.header__inner -->
+  </header>
+  <main>
+
+    <section class="section sec01">
+      <div class="section__inner">
+        <figure class="mv__inner">
+          <img src="/img/img_mv.png" alt="お弁当の画像">
+        </figure><!-- /.mv__inner -->
+        <h2 class="sec01__title">
+          <img src="/img/catch_01.svg" alt="愛を込めて届けます">
+        </h2><!-- /.sec01__title -->
+        <p class="sec01__text">
+          味と栄養バランスにこだわり<br>季節の食材で調理した<br>「おいしい」お弁当を<br>愛を込めてお届けします
+        </p><!-- /.sec01__text -->
+      </div><!-- /.section__inner -->
+    </section><!-- /.section sec01 -->
+
+    <section class="section sec02">
+      <div class="section__inner">
+        <h2 class="section__title sec02__title">
+          <img src="/img/title_01.svg" alt="コタのお弁当">
+        </h2><!-- /.section__title -->
+        <ul class="cards cards--col2">
+          <li class="cards__item item01 card">
+            <figure class="card__imgArea">
+              <img src="/img/img_item01.jpg" alt="お弁当の画像">
+            </figure><!-- /.item__imgArea -->
+            <div class="card__body">
+              <h3 class="card__title">
+                日替わり弁当
+              </h3><!-- /.card__title -->
+              <p class="card__text">
+                500円<span class="card__text--small">（税込）</span><br>
+              </p><!-- /.card__text -->
+              <span class="card__text--small">※写真は一例です</span><!-- /.item__text--small -->
+            </div><!-- /.card__body -->
+          </li><!-- /.cards_item -->
+          <li class="cards__item item02 card">
+            <figure class="card__imgArea">
+              <img src="/img/img_item02.jpg" alt="お弁当の画像">
+            </figure><!-- /.item__imgArea -->
+            <div class="card__body">
+              <h3 class="card__title">
+                お魚弁当
+              </h3><!-- /.card__title -->
+              <p class="card__text">
+                500円<span class="card__text--small">（税込）</span><br>
+              </p><!-- /.card__text -->
+              <span class="card__text--small">※写真は一例です</span><!-- /.item__text--small -->
+            </div><!-- /.card__body -->
+          </li><!-- /.cards_item -->
+          <li class="cards__item item03 card">
+            <figure class="card__imgArea">
+              <img src="/img/img_item03.jpg" alt="お弁当の画像">
+            </figure><!-- /.item__imgArea -->
+            <div class="card__body">
+              <h3 class="card__title">
+                コタ弁当
+              </h3><!-- /.card__title -->
+              <p class="card__text">
+                500円<span class="card__text--small">（税込）</span><br>
+              </p><!-- /.card__text -->
+              <span class="card__text--small">※写真は一例です</span><!-- /.item__text--small -->
+            </div><!-- /.card__body -->
+          </li><!-- /.cards_item -->
+          <li class="cards__item item04 card">
+            <figure class="card__imgArea">
+              <img src="/img/img_item04.jpg" alt="お弁当の画像">
+            </figure><!-- /.item__imgArea -->
+            <div class="card__body">
+              <h3 class="card__title">
+                コタ弁当
+              </h3><!-- /.card__title -->
+              <p class="card__text">
+                500円<span class="card__text--small">（税込）</span><br>
+              </p><!-- /.card__text -->
+              <span class="card__text--small">※写真は一例です</span><!-- /.item__text--small -->
+            </div><!-- /.card__body -->
+          </li><!-- /.cards_item -->
+          <li class="cards__item item05 card">
+            <figure class="card__imgArea">
+              <img src="/img/img_item05.jpg" alt="お弁当の画像">
+            </figure><!-- /.item__imgArea -->
+            <div class="card__body">
+              <h3 class="card__title">
+                コタ丼
+              </h3><!-- /.card__title -->
+              <p class="card__text">
+                500円<span class="card__text--small">（税込）</span><br>
+              </p><!-- /.card__text -->
+              <span class="card__text--small">※写真は一例です</span><!-- /.item__text--small -->
+            </div><!-- /.card__body -->
+          </li><!-- /.cards_item -->
+          <li class="cards__item item06 card">
+            <figure class="card__imgArea">
+              <img src="/img/img_item06.jpg" alt="お弁当の画像">
+            </figure><!-- /.item__imgArea -->
+            <div class="card__body">
+              <h3 class="card__title">
+                からあげ 6個入り
+              </h3><!-- /.card__title -->
+              <p class="card__text">
+                500円<span class="card__text--small">（税込）</span><br>
+              </p><!-- /.card__text -->
+              <span class="card__text--small">※写真は一例です</span><!-- /.item__text--small -->
+            </div><!-- /.card__body -->
+          </li><!-- /.cards_item -->
+        </ul><!-- /.cards -->
+        <div class="btnArea pt100 text-center">
+          <a href="#" class="btn">本日の日替わり弁当はこちら</a><!-- /.btn -->
+        </div><!-- /.btnArea pt100 -->
+      </div><!-- /.section__inner -->
+    </section><!-- /.section sec02 -->
+
+    <section class="section sec03 text-center">
+      <div class="section__inner">
+        <h2 class="section__title sec02__title">
+          <img src="/img/title_02.svg" alt="ご利用案内">
+        </h2><!-- /.section__title -->
+        <div class="about">
+          <h4 class="level4-heading mt60">
+            ご注文について
+          </h4><!-- /.level4-heading -->
+          <div class="about__body">
+            <p class="text about__text--md">お電話にてご注文ください</p><!-- /.text fontSize--md -->
+            <p class="text about__text--ll"><span class="small">TEL.</span>0896-77-5361</p><!-- /.text fontSize--ll -->
+            <p class="about__text--s">〈 配達中などにより繋がらない時はこちら▶ 携帯080-6375-9115 〉</p><!-- /.about__text--s -->
+            <div class="about__table table">
+              <table class="table__inner">
+                <tr class="table__row">
+                  <th class="table__head">
+                    ご注文期限
+                  </th><!-- /.table__head -->
+                  <td class="table__text">
+                    前日までにご注文ください。<br>
+                    <spam class="small">※当日注文も可能な限りの対応でお受け致しますがご希望に沿えない場合がございます。</spam>
+                  </td><!-- /.table__text -->
+                </tr><!-- /.table__row -->
+                <tr class="table__row">
+                  <th class="table__head">
+                    配達可能時間
+                  </th><!-- /.table__head -->
+                  <td class="table__text">
+                    12:00〜14:00（日曜日・祝日定休）<br>
+                    <spam class="small">※時間外もご相談ください。</spam>
+                  </td><!-- /.table__text -->
+                </tr><!-- /.table__row -->
+                <tr class="table__row">
+                  <th class="table__head">
+                    お支払い方法
+                  </th><!-- /.table__head -->
+                  <td class="table__text">
+                    現金払い・QRコード決済<br>
+                    <spam class="small">※法人のお客様／請求書払いも対応しております。ご相談ください。</spam>
+                  </td><!-- /.table__text -->
+                </tr><!-- /.table__row -->
+              </table><!-- /.table__inner -->
+            </div><!-- /.table -->
+            <div class="about__imgArea">
+              <h4 class="level4-heading imgArea__title">
+                配達エリア
+              </h4><!-- /.level4-heading -->
+              <div class="imgArea__inner">
+                <figure class="imgArea__img">
+                  <img src="/img/img_map.png" alt="地図">
+                </figure><!-- /.imgArea__img -->
+                <div class="imgArea__body">
+                  <ul class="imgArea__list">
+                    <li class="imgArea__item">
+                      <p class="title">四国中央市</p><!-- /.title -->
+                      <p class="text">
+                        ・旧川之江市<br>
+                        ・旧伊予三島市<br>
+                        ・土居町<br>
+                      </p><!-- /.text -->
+                    </li><!-- /.imgArea__item -->
+                    <li class="imgArea__item">
+                      <p class="title">観音寺市</p><!-- /.title -->
+                      <p class="text">
+                        ・豊浜町<br>
+                      </p><!-- /.text -->
+                    </li><!-- /.imgArea__item -->
+                  </ul><!-- /.imgArea__list -->
+                  <p class="text">※エリア外の地域もご相談ください</p><!-- /.text -->
+                </div><!-- /.imgArea__body -->
+              </div><!-- /.imgArea__inner -->
+            </div><!-- /.about__mapArea -->
+          </div><!-- /.about__body -->
+        </div><!-- /.about -->
+      </div><!-- /.section__inner -->
+    </section><!-- /.section sec03 -->
+  </main>
+  <footer class="footer">
+    <div class="footer__logo">
+      <img src="/img/logo_02.svg" alt="">
+    </div><!-- /.footer__logo -->
+    <p class="footer__text">
+      〒799-0112 四国中央市金生町山田井1241-2<br>
+      TEL.0896-77-5361<br>
+      〈定休日〉日曜日・祝日<br>
+    </p><!-- /.footer__text -->
+    <p class="footer__copy">
+    <span style="font-family: 'Arial', 'Times New Roman', 'Times', sans-serif">&copy;&nbsp;</span> 2022 KOTA-BENTO.
+    </p><!-- /.footer__copy -->
+  </footer><!-- /.footer -->
 </body>
+
 </html>

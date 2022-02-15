@@ -1,0 +1,81 @@
+@use "global" as *;
+/* 
+// ==========
+// card 
+// ==========
+*/
+.cards {
+  @include mq() {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.flex__item {
+  margin-bottom: rem(100);
+}
+
+.card__body {
+  text-align: center;
+}
+
+.card__imgArea {
+  max-width: rem(540);
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: rem(50);
+  @include mq() {
+    max-width: rem(350);
+  }
+}
+
+.card__title {
+  font-size: rem(30);
+  font-weight: bold;
+  letter-spacing: .12em;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.card__text {
+  font-size: rem(30);
+  font-weight: bold;
+  letter-spacing: 0.07em;
+  line-height: 1.8;
+  text-align: center;
+  &--small {
+    display: inline-block;
+    color: $black;
+    font-size: rem(18);
+    font-weight: normal;
+    text-align: center;
+  }
+  &>.card__text--small {
+    font-weight: inherit;
+  }
+}
+
+/* cards--col2 */
+.cards--col2 {
+  margin-bottom: rem(-100);
+  @include mq() {
+    max-width: rem(800);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: rem(-130);
+  }
+}
+
+.cards--col2 > .cards__item {
+  margin-bottom: rem(100);
+  @include mq() {
+    width: calc((100% - 6.25rem) / 2);
+    margin-right: 6.25rem;
+    margin-bottom: rem(130);
+  }
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}

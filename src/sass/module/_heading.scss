@@ -1,0 +1,15 @@
+@use "global" as *;
+/*
+// ==========
+// 見出し
+// ==========
+*/
+.level4-heading {
+  display: inline-block;
+  padding: rem(13) rem(60);
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 2rem;
+  font-size: rem(24);
+  font-weight: bold;
+}

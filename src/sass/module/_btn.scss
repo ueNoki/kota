@@ -1,0 +1,22 @@
+@use "global" as *;
+/*
+// ==========
+// btn
+// ==========
+*/
+.btn {
+  display: inline-block;
+  padding: rem(11) rem(42.5);
+  color: $white;
+  background: #b12e29;
+  border-radius: rem(10);
+  font-size: rem(31);
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  line-height: 1.8;
+}
+
+.section__btnArea {
+  padding-top: rem(100);
+  text-align: center;
+}

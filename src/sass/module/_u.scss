@@ -1,0 +1,41 @@
+@use "global" as *;
+/* 文字サイズ */
+.fontSize--ll {
+  font-size: rem(70);
+}
+.fontSize--l {
+  font-size: rem(27);
+  @include mq() {
+    font-size: rem(30);
+  }
+}
+.fontSize--md {
+  font-size: rem(23);
+  @include mq() {
+    font-size: rem(25);
+  }
+}
+.fontSize--s {
+  font-size: 1rem;
+  @include mq() {
+    font-size: rem(14);
+  }
+}
+.fontSize--ss {
+  font-size: rem(12);
+}
+
+/* テキスト中央 */
+.text-center {
+  text-align: center;
+}
+
+/* 太字 */
+.text-bold {
+  font-weight: bold;
+}
+
+/* インラインブロック */
+.text-inline-block {
+  display: inline-block;
+}
