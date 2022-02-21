@@ -33,7 +33,7 @@
   <header class="header">
     <div class="header__inner header__flexWrapper">
       <h1 class="header__logo">
-        <img src="/img/logo_01.svg" alt="弁当のコタ">
+        <img src="./img/logo_01.svg" alt="弁当のコタ">
       </h1><!-- /.header__logo -->
       <div class="header__drawer js-hamburger">
         <span></span>
@@ -47,10 +47,10 @@
               <a href="#">トップ</a>
             </li><!-- /.nav__item -->
             <li class="nav__item">
-              <a href="#">コタのお弁当</a>
+              <a href="#sec02">コタのお弁当</a>
             </li><!-- /.nav__item -->
             <li class="nav__item">
-              <a href="#">ご利用案内</a>
+              <a href="#sec03">ご利用案内</a>
             </li><!-- /.nav__item -->
           </ul><!-- /.nav__list -->
         </nav>
@@ -58,14 +58,18 @@
           <ul class="headerLink__list">
             <li class="headerLink__item">
               <span>ご注文はこちら</span>
-              <p class="headerLink__tel">TEL. 0896-77-5361</p><!-- /.headerLink__tel -->
+              <p class="headerLink__tel"><spam class="small">TEL.</spam>0896-77-5361</p><!-- /.headerLink__tel -->
             </li><!-- /.headerLink__item -->
             <li class="headerLink__item">
               <figure class="headerLink__imgArea">
-                <img src="/img/img_instagram.svg" alt="インスタグラム">
+                <a href="#">
+                  <img src="./img/img_instagram.svg" alt="インスタグラム">
+                </a>
               </figure><!-- /.headerLink__imgArea -->
               <figure class="headerLink__imgArea">
-                <img src="/img/img_line.svg" alt="ライン">
+                <a href="#">
+                  <img src="./img/img_line.svg" alt="ライン">
+                </a>
               </figure><!-- /.headerLink__imgArea -->
             </li><!-- /.headerLink__item -->
           </ul><!-- /.headerLink__list -->
@@ -73,15 +77,14 @@
       </div><!-- /.header__nav -->
     </div><!-- /.header__inner -->
   </header>
-  <main>
-
+  <main class="main">
     <section class="section sec01">
       <div class="section__inner">
         <figure class="mv__inner">
-          <img src="/img/img_mv.png" alt="お弁当の画像">
+          <img src="./img/img_mv.png" alt="お弁当の画像">
         </figure><!-- /.mv__inner -->
         <h2 class="sec01__title">
-          <img src="/img/catch_01.svg" alt="愛を込めて届けます">
+          <img src="./img/catch_01.svg" alt="愛を込めて届けます">
         </h2><!-- /.sec01__title -->
         <p class="sec01__text">
           味と栄養バランスにこだわり<br>季節の食材で調理した<br>「おいしい」お弁当を<br>愛を込めてお届けします
@@ -89,92 +92,119 @@
       </div><!-- /.section__inner -->
     </section><!-- /.section sec01 -->
 
-    <section class="section sec02">
+    <section id="sec02" class="section sec02">
       <div class="section__inner">
         <h2 class="section__title sec02__title">
-          <img src="/img/title_01.svg" alt="コタのお弁当">
+          <img src="./img/title_01.svg" alt="コタのお弁当">
         </h2><!-- /.section__title -->
+        <div class="section__imgArea--full">
+          <img src="./img/img_fullSize.jpg" alt="お弁当の画像">
+        </div><!-- /.section__imgArea--full -->
         <ul class="cards cards--col2">
-          <li class="cards__item item01 card">
+          <li class="cards__item item01 card text-center">
             <figure class="card__imgArea">
-              <img src="/img/img_item01.jpg" alt="お弁当の画像">
+              <img src="./img/img_item01.jpg" alt="お弁当の画像">
             </figure><!-- /.item__imgArea -->
             <div class="card__body">
               <h3 class="card__title">
                 日替わり弁当
               </h3><!-- /.card__title -->
               <p class="card__text">
-                500円<span class="card__text--small">（税込）</span><br>
+                ここに紹介文が入ります。<br>
+                ここに紹介文が入ります。<br>
+              </p><!-- /.card__text -->
+              <p class="card__price">
+                500<span class="card__priceUnit">円（税込）</span><br>
               </p><!-- /.card__text -->
               <span class="card__text--small">※写真は一例です</span><!-- /.item__text--small -->
             </div><!-- /.card__body -->
           </li><!-- /.cards_item -->
-          <li class="cards__item item02 card">
+          <li class="cards__item item02 card text-center">
             <figure class="card__imgArea">
-              <img src="/img/img_item02.jpg" alt="お弁当の画像">
+              <img src="./img/img_item02.jpg" alt="お弁当の画像">
             </figure><!-- /.item__imgArea -->
             <div class="card__body">
               <h3 class="card__title">
                 お魚弁当
               </h3><!-- /.card__title -->
               <p class="card__text">
-                500円<span class="card__text--small">（税込）</span><br>
+                ここに紹介文が入ります。<br>
+                ここに紹介文が入ります。<br>
+              </p><!-- /.card__text -->
+              <p class="card__price">
+                500<span class="card__priceUnit">円（税込）</span><br>
               </p><!-- /.card__text -->
               <span class="card__text--small">※写真は一例です</span><!-- /.item__text--small -->
             </div><!-- /.card__body -->
           </li><!-- /.cards_item -->
-          <li class="cards__item item03 card">
+          <li class="cards__item item03 card text-center">
             <figure class="card__imgArea">
-              <img src="/img/img_item03.jpg" alt="お弁当の画像">
+              <img src="./img/img_item03.jpg" alt="お弁当の画像">
             </figure><!-- /.item__imgArea -->
             <div class="card__body">
               <h3 class="card__title">
                 コタ弁当
               </h3><!-- /.card__title -->
               <p class="card__text">
-                500円<span class="card__text--small">（税込）</span><br>
+                ここに紹介文が入ります。<br>
+                ここに紹介文が入ります。<br>
+              </p><!-- /.card__text -->
+              <p class="card__price">
+                500<span class="card__priceUnit">円（税込）</span><br>
               </p><!-- /.card__text -->
               <span class="card__text--small">※写真は一例です</span><!-- /.item__text--small -->
             </div><!-- /.card__body -->
           </li><!-- /.cards_item -->
-          <li class="cards__item item04 card">
+          <li class="cards__item item04 card text-center">
             <figure class="card__imgArea">
-              <img src="/img/img_item04.jpg" alt="お弁当の画像">
+              <img src="./img/img_item04.jpg" alt="お弁当の画像">
             </figure><!-- /.item__imgArea -->
             <div class="card__body">
               <h3 class="card__title">
                 コタ弁当
               </h3><!-- /.card__title -->
               <p class="card__text">
-                500円<span class="card__text--small">（税込）</span><br>
+                ここに紹介文が入ります。<br>
+                ここに紹介文が入ります。<br>
+              </p><!-- /.card__text -->
+              <p class="card__price">
+                500<span class="card__priceUnit">円（税込）</span><br>
               </p><!-- /.card__text -->
               <span class="card__text--small">※写真は一例です</span><!-- /.item__text--small -->
             </div><!-- /.card__body -->
           </li><!-- /.cards_item -->
-          <li class="cards__item item05 card">
+          <li class="cards__item item05 card text-center">
             <figure class="card__imgArea">
-              <img src="/img/img_item05.jpg" alt="お弁当の画像">
+              <img src="./img/img_item05.jpg" alt="お弁当の画像">
             </figure><!-- /.item__imgArea -->
             <div class="card__body">
               <h3 class="card__title">
                 コタ丼
               </h3><!-- /.card__title -->
               <p class="card__text">
-                500円<span class="card__text--small">（税込）</span><br>
+                ここに紹介文が入ります。<br>
+                ここに紹介文が入ります。<br>
+              </p><!-- /.card__text -->
+              <p class="card__price">
+                500<span class="card__priceUnit">円（税込）</span><br>
               </p><!-- /.card__text -->
               <span class="card__text--small">※写真は一例です</span><!-- /.item__text--small -->
             </div><!-- /.card__body -->
           </li><!-- /.cards_item -->
-          <li class="cards__item item06 card">
+          <li class="cards__item item06 card text-center">
             <figure class="card__imgArea">
-              <img src="/img/img_item06.jpg" alt="お弁当の画像">
+              <img src="./img/img_item06.jpg" alt="お弁当の画像">
             </figure><!-- /.item__imgArea -->
             <div class="card__body">
               <h3 class="card__title">
                 からあげ 6個入り
               </h3><!-- /.card__title -->
               <p class="card__text">
-                500円<span class="card__text--small">（税込）</span><br>
+                ここに紹介文が入ります。<br>
+                ここに紹介文が入ります。<br>
+              </p><!-- /.card__text -->
+              <p class="card__price">
+                500<span class="card__priceUnit">円（税込）</span><br>
               </p><!-- /.card__text -->
               <span class="card__text--small">※写真は一例です</span><!-- /.item__text--small -->
             </div><!-- /.card__body -->
@@ -186,13 +216,13 @@
       </div><!-- /.section__inner -->
     </section><!-- /.section sec02 -->
 
-    <section class="section sec03 text-center">
+    <section id="sec03" class="section sec03 text-center">
       <div class="section__inner">
         <h2 class="section__title sec02__title">
-          <img src="/img/title_02.svg" alt="ご利用案内">
+          <img src="./img/title_02.svg" alt="ご利用案内">
         </h2><!-- /.section__title -->
         <div class="about">
-          <h4 class="level4-heading mt60">
+          <h4 class="level4-heading">
             ご注文について
           </h4><!-- /.level4-heading -->
           <div class="about__body">
@@ -236,7 +266,7 @@
               </h4><!-- /.level4-heading -->
               <div class="imgArea__inner">
                 <figure class="imgArea__img">
-                  <img src="/img/img_map.png" alt="地図">
+                  <img src="./img/img_map.png" alt="地図">
                 </figure><!-- /.imgArea__img -->
                 <div class="imgArea__body">
                   <ul class="imgArea__list">
@@ -255,7 +285,7 @@
                       </p><!-- /.text -->
                     </li><!-- /.imgArea__item -->
                   </ul><!-- /.imgArea__list -->
-                  <p class="text">※エリア外の地域もご相談ください</p><!-- /.text -->
+                  <p class="text">※エリア外の地域も<br class="u-mobile">ご相談ください</p><!-- /.text -->
                 </div><!-- /.imgArea__body -->
               </div><!-- /.imgArea__inner -->
             </div><!-- /.about__mapArea -->
@@ -266,10 +296,10 @@
   </main>
   <footer class="footer">
     <div class="footer__logo">
-      <img src="/img/logo_02.svg" alt="">
+      <img src="./img/logo_02.svg" alt="">
     </div><!-- /.footer__logo -->
     <p class="footer__text">
-      〒799-0112 四国中央市金生町山田井1241-2<br>
+      〒799-0112 <br class="u-mobile">四国中央市金生町山田井1241-2<br>
       TEL.0896-77-5361<br>
       〈定休日〉日曜日・祝日<br>
     </p><!-- /.footer__text -->
@@ -277,6 +307,22 @@
     <span style="font-family: 'Arial', 'Times New Roman', 'Times', sans-serif">&copy;&nbsp;</span> 2022 KOTA-BENTO.
     </p><!-- /.footer__copy -->
   </footer><!-- /.footer -->
+  <div class="cta">
+    <div class="cta__top">
+      <a href="#" class="cta__btn cta__btn--instagram">
+        本日のお弁当
+        <span class="en">Instagram</span><!-- /.en -->
+      </a><!-- /.cta__btn--instagram -->
+      <a href="#" class="cta__btn cta__btn--line">
+        お友達追加
+        <span class="en">LINE</span><!-- /.en -->
+      </a><!-- /.cta__btn cta__btn--line -->
+    </div><!-- /.cta__top -->
+    <div class="cta__bottom">
+      <p class="text">ご注文・ご予約はこちら</p><!-- /.text -->
+      <a href="tel:0896775361" class="cta__link">TEL.0896-77-5361</a><!-- /.cta__link -->
+    </div><!-- /.cta__bottom -->
+  </div><!-- /.cta -->
 </body>
 
 </html>

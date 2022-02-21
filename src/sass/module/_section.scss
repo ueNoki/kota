@@ -4,7 +4,14 @@
 // section
 // ==========
 */
-
+.section {
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  @include mq() {
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
+}
 .section__inner {
   width: unquote("min(90%, 1200px)");
   margin-left: auto;
@@ -13,7 +20,7 @@
 
 .section__title {
   width: auto;
-  height: rem(80);
+  height: rem(48);
   text-align: center;
   margin-bottom: rem(30);
   img {
@@ -22,12 +29,22 @@
     height: 100%;
     max-height: 100%;
   }
+  @include mq() {
+    height: rem(80);
+    margin-bottom: rem(70);
+  }
 }
 
 /* sec01 */
 .sec01 {
-  padding-bottom: rem(80);
-  background: linear-gradient(to bottom, #fff 0 40%, #000 40% 100%);
+  padding-top: rem(30);
+  padding-bottom: rem(30);
+  background: linear-gradient(to bottom, #fff 0% 30%, #000 30% 100%);
+  @include mq() {
+    padding-top: rem(70);
+    padding-bottom: rem(80);
+    background: linear-gradient(to bottom, #fff 0% 40%, #000 40% 100%);
+  }
 }
 
 .sec01__title {
@@ -46,12 +63,29 @@
 
 /* sec02 */
 .sec02 {
-  padding-top: rem(150);
-  padding-bottom: rem(150);
+  @include mq() {
+    padding-top: rem(150);
+    padding-bottom: rem(150);
+  }
 }
 /* sec03 */
 .sec03 {
-  padding-top: rem(100);
-  padding-bottom: rem(126);
   background: linear-gradient(to bottom, #edeae2 0% 80%, #fff 80% 100%);
+  @include mq() {
+    padding-top: rem(100);
+    padding-bottom: rem(126);
+    background: linear-gradient(to bottom, #edeae2 0% 80%, #fff 80% 100%);
+  }
+}
+/* フル幅の画像エリア */
+.section__imgArea--full {
+  width: 100%;
+  height: auto;
+  padding-bottom: rem(60);
+  @include mq() {
+    padding-bottom: rem(70);
+  }
+  img {
+    object-fit: cover;
+  }
 }

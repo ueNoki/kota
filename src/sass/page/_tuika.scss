@@ -1,0 +1,12 @@
+@use "global" as *;
+/* スマホ改行 0216 */
+@media screen and (max-width:640px) {
+	.pc {
+		display: none;
+	}
+}
+@media screen and (min-width:641px) {
+	.sp {
+		display: none;
+	}
+}

@@ -1,4 +1,16 @@
 @use "global" as *;
+/* 余白調整 */
+.pt100 {
+  padding-top: rem(100);
+}
+.mt60 {
+  margin-top: rem(60);
+}
+.pc-mt0 {
+  @include mq() {
+    margin-top: 0;
+  }
+}
 /* 文字サイズ */
 .fontSize--ll {
   font-size: rem(70);

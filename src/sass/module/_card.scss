@@ -5,18 +5,12 @@
 // ==========
 */
 .cards {
-  @include mq() {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .flex__item {
   margin-bottom: rem(100);
-}
-
-.card__body {
-  text-align: center;
 }
 
 .card__imgArea {
@@ -25,38 +19,46 @@
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: rem(50);
+  margin-bottom: rem(30);
   @include mq() {
     max-width: rem(350);
   }
 }
 
 .card__title {
-  font-size: rem(30);
+  margin-bottom: 1rem;
+  font-size: 1rem;
   font-weight: bold;
-  letter-spacing: .12em;
-  line-height: 1.8;
-  text-align: center;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  @include mq() {
+    font-size: rem(20);
+  }
 }
 
-.card__text {
-  font-size: rem(30);
+.card__price {
+  font-size: rem(20);
   font-weight: bold;
   letter-spacing: 0.07em;
   line-height: 1.8;
-  text-align: center;
-  &--small {
-    display: inline-block;
-    color: $black;
-    font-size: rem(18);
-    font-weight: normal;
-    text-align: center;
-  }
-  &>.card__text--small {
-    font-weight: inherit;
-  }
 }
 
+.card__priceUnit {
+  font-size: rem(12);
+}
+
+.card__text {
+  font-size: rem(12);
+  font-weight: normal;
+  left: 0.12em;
+}
+
+.card__text--small {
+  font-size: rem(10);
+  display: inline-block;
+  color: $black;
+  font-weight: normal;
+}
 /* cards--col2 */
 .cards--col2 {
   margin-bottom: rem(-100);
@@ -69,10 +71,15 @@
 }
 
 .cards--col2 > .cards__item {
-  margin-bottom: rem(100);
+  margin-bottom: 2rem;
+  width: calc((100% - 2rem) / 2);
+  margin-right: 2rem;
   @include mq() {
     width: calc((100% - 6.25rem) / 2);
     margin-right: 6.25rem;
+    margin-bottom: rem(100);
+  }
+  @include mq(lg) {
     margin-bottom: rem(130);
   }
   &:nth-child(2n) {

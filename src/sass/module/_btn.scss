@@ -8,12 +8,27 @@
   display: inline-block;
   padding: rem(11) rem(42.5);
   color: $white;
-  background: #b12e29;
+  background: $red;
+  border: 2px solid $red;
   border-radius: rem(10);
-  font-size: rem(31);
+  font-size: rem(16);
   font-weight: bold;
   letter-spacing: 0.12em;
   line-height: 1.8;
+  transition: all .3s;
+  @include mq() {
+    font-size: rem(31);
+    padding: rem(5) rem(16);
+    border-radius: rem(4);
+  }
+  @include mq(lg) {
+    font-size: rem(16);
+  }
+  &:focus,
+  &:hover {
+    color: $red;
+    background: $white;
+  }
 }
 
 .section__btnArea {

@@ -1,0 +1,8 @@
+@use "global" as *;
+/* ヘッダー分の余白 */
+.main {
+  margin-top: rem(80);
+  @include mq() {
+    margin-top: rem(140);
+  }
+}

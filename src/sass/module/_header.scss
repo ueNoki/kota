@@ -5,20 +5,33 @@
 // ==========
 */
 .header {
-  position: relative;
-  height: rem(170);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: rem(80);
   background: $white;
+  z-index: 10;
   @include mq() {
+    height: rem(170);
+  }
+  @include mq(lg) {
     height: rem(140);
   }
 }
 
 .header__inner {
   max-width: 1920px;
-  width: 90%;
+  width: 100%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: rem(30);
+  padding-right: rem(30);
+  @include mq(xl) {
+    padding-left: rem(50);
+    padding-right: rem(90);
+  }
 }
 
 .header__flexWrapper {
@@ -28,9 +41,11 @@
 }
 
 .header__logo {
-  height: rem(80);
-  // width: rem(220);
+  height: 3.5rem;
   width: auto;
+  @include mq() {
+    height: rem(80);
+  }
   img {
     height: 100%;
     width: auto;
@@ -39,15 +54,19 @@
 
 .header__drawer {
   position: relative;
-  width: rem(58);
+  width: rem(40);
   height: rem(30);
+  @include mq() {
+    width: rem(58);
+    display: none;
+  }
   span {
     position: absolute;
     display: inline-block;
     width: 100%;
     height: 3px;
     background-color: $base-color;
-    transition: all .3s;
+    transition: all 0.3s;
     &:first-child {
       top: 0;
     }
@@ -82,15 +101,22 @@
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: rgba(255,255,255,.9);
-  font-size: rem(40);
+  padding-bottom: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: $black;
+  font-size: rem(24);
   font-weight: bold;
   opacity: 0;
   pointer-events: none;
-  transition: all .3s;
+  transition: all 0.3s;
   @include mq() {
+    pointer-events: auto;
     position: initial;
     display: flex;
+    width: auto;
+    padding-bottom: 0;
+    font-size: rem(20);
+    opacity: 1;
   }
 }
 
@@ -99,19 +125,62 @@
   pointer-events: auto;
 }
 
+.header__nav .nav__item {
+  letter-spacing: 0.12em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @include mq(xl) {
+    padding-left: rem(20);
+    padding-right: rem(20);
+  }
+}
+
 .header__nav a {
+  position: relative;
   display: block;
   width: 100%;
   height: 100%;
-  padding: 0 rem(20);
+  padding: rem(10) rem(40);
+  @include mq() {
+    padding-left: 0;
+    padding-right: 0;
+  }
   &::before {
-    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    width: rem(16);
+    height: rem(16);
+    content: "";
     display: inline-block;
-    width: rem(24);
-    height: rem(24);
     background-color: $red;
     border-radius: 50%;
     margin-right: rem(30);
+    @include mq() {
+      width: rem(24);
+      height: rem(24);
+      content: none;
+    }
+  }
+  &::after {
+    @include mq() {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $red;
+      transition: all 0.3s;
+      transform: scale(0, 1);
+      transform-origin: center top;
+    }
+  }
+  &:hover::after,
+  &:focus::after {
+    transform: scale(1, 1);
   }
 }
 
@@ -122,19 +191,60 @@
     align-items: center;
   }
 }
+
 .header__linkArea {
   display: none;
   @include mq() {
+    position: relative;
     display: block;
+    margin-left: 4rem;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: -27px;
+      width: 1px;
+      height: rem(60);
+      background: $base-color;
+      transform: translateY(-50%);
+    }
   }
 }
 
 .headerLink__list {
   display: flex;
+  align-items: center;
+}
+
+.headerLink__item {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  line-height: 1.75;
+  & + & {
+    margin-left: rem(40);
+  }
+}
+
+.headerLink__tel {
+  font-family: $ff-cubano;
+  font-size: rem(35);
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  .small {
+    padding-right: 5px;
+    font-size: rem(26);
+    letter-spacing: 0.07em;
+  }
 }
 
 .headerLink__imgArea {
   display: inline-block;
-  max-width: rem(42);
+  width: rem(42);
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
-

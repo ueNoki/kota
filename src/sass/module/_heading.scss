@@ -6,10 +6,18 @@
 */
 .level4-heading {
   display: inline-block;
-  padding: rem(13) rem(60);
+  padding: rem(8) rem(30);
   background-color: $white;
   border: 1px solid $black;
   border-radius: 2rem;
-  font-size: rem(24);
+  font-size: rem(18);
   font-weight: bold;
+  @include mq() {
+    font-size: rem(24);
+    padding: rem(13) rem(60);
+    letter-spacing: .12em;
+  }
+  @include mq(lg) {
+    padding: rem(8) rem(40);
+  }
 }

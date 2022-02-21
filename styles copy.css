@@ -542,15 +542,11 @@ select::-ms-expand {
 .card__title {
   margin-bottom: 16px;
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: 0.12em;
   line-height: 1.2;
-}
-@media screen and (min-width: 768px) {
-  .card__title {
-    font-size: 1.25rem;
-  }
 }
 
 .card__price {
@@ -641,16 +637,16 @@ select::-ms-expand {
 .cta__btn {
   display: inline-block;
   width: 50%;
-  padding-top: 4px;
-  padding-top: 0.25rem;
-  padding-bottom: 4px;
-  padding-bottom: 0.25rem;
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
   color: #fff;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   letter-spacing: 0.12em;
-  line-height: 1.4;
+  line-height: 1.75;
 }
 @media screen and (min-width: 768px) {
   .cta__btn {
@@ -661,11 +657,11 @@ select::-ms-expand {
 }
 .cta__btn .en {
   display: block;
-  font-size: 10px;
-  font-size: 0.625rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
   letter-spacing: 0.06em;
-  line-height: 1.2;
+  line-height: 1.75;
 }
 @media screen and (min-width: 768px) {
   .cta__btn .en {
@@ -681,11 +677,11 @@ select::-ms-expand {
 
 .cta .text {
   color: #000;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   letter-spacing: 0.12em;
-  line-height: 1.2;
+  line-height: 1.75;
 }
 @media screen and (min-width: 768px) {
   .cta .text {
@@ -703,8 +699,8 @@ select::-ms-expand {
 .cta__link {
   display: block;
   font-family: cubano, sans-serif;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .cta__link {
@@ -838,8 +834,8 @@ select::-ms-expand {
 }
 
 .header__logo {
-  height: 56px;
-  height: 3.5rem;
+  height: 32px;
+  height: 2rem;
   width: auto;
 }
 @media screen and (min-width: 768px) {
@@ -1270,23 +1266,6 @@ select::-ms-expand {
   }
 }
 
-/* フル幅の画像エリア */
-.section__imgArea--full {
-  width: 100%;
-  height: auto;
-  padding-bottom: 60px;
-  padding-bottom: 3.75rem;
-}
-@media screen and (min-width: 768px) {
-  .section__imgArea--full {
-    padding-bottom: 4.375rem;
-  }
-}
-.section__imgArea--full img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 /* 余白調整 */
 .pt100 {
   padding-top: 100px;
@@ -1359,15 +1338,20 @@ select::-ms-expand {
 .text-inline-block {
   display: inline-block;
 }
+/*# sourceMappingURL=styles.css.map */
+
+
+
+
 
 /* スマホ改行 0216 */
-@media screen and (max-width: 640px) {
-  .pc {
-    display: none;
-  }
+@media screen and (max-width:640px) {
+	.pc {
+		display: none;
+	}
 }
-@media screen and (min-width: 641px) {
-  .sp {
-    display: none;
-  }
+@media screen and (min-width:641px) {
+	.sp {
+		display: none;
+	}
 }

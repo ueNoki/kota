@@ -6,9 +6,19 @@
 // ==========
 */
 .footer {
-  padding-bottom: rem(50);
-  background: linear-gradient(to bottom, #fff 0% 25%, $base-color 25% 100%);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: rem(180);
+  background: linear-gradient(to bottom, #fff 0% 19%, $base-color 19% 100%);
   text-align: center;
+  @include mq() {
+    padding-bottom: rem(480);
+    background: linear-gradient(to bottom, #fff 0% 14%, $base-color 14% 100%);
+  }
+  @include mq(lg) {
+    padding-bottom: rem(50);
+    background: linear-gradient(to bottom, #fff 0% 25%, $base-color 25% 100%);
+  }
 }
 
 .footer__logo {
