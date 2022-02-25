@@ -211,6 +211,15 @@
   }
 }
 
+.headerLink a {
+  &:focus,
+  &:hover {
+    &::after {
+      content: none;
+    }
+  }
+}
+
 .headerLink__list {
   display: flex;
   align-items: center;

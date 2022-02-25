@@ -324,8 +324,8 @@ select::-ms-expand {
   }
 }
 .about__table .small {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: bold;
   letter-spacing: 0.12em;
   line-height: 1.8;
@@ -542,8 +542,8 @@ select::-ms-expand {
 .card__title {
   margin-bottom: 16px;
   margin-bottom: 1rem;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 12.8px;
+  font-size: 0.8rem;
   font-weight: bold;
   letter-spacing: 0.12em;
   line-height: 1.2;
@@ -1047,6 +1047,10 @@ select::-ms-expand {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
+}
+
+.headerLink a:focus::after, .headerLink a:hover::after {
+  content: none;
 }
 
 .headerLink__list {
